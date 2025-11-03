@@ -25,8 +25,10 @@ const connectDB = async() => {
         console.log("Failed to connect with Db", err);
     }
 }
+connectDB();
 
-app.listen(PORT, () => {
-    console.log(`server running on ${PORT}`);
-    connectDB();
-});
+// app.listen(PORT, () => {
+//     console.log(`server running on ${PORT}`);
+// });
+
+export default app;
